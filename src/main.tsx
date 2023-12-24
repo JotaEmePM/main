@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Root from './shared/layout/baselayout';
-import ErrorPage from './shared/layout/error-page';
-import App from './App';
+
+import ErrorPage from './shared/error-page';
+import { MainPage } from './pages/blog/main-page';
+import { CVPage } from './pages/cv/main';
 
 const router = createBrowserRouter([
   {
@@ -14,14 +16,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <App />
+        element: <MainPage />
+      },
+      {
+        path: '/cv',
+        element: <CVPage />
       }
     ]
   },
-  {
-    path: '/hello',
-    element: <div>Hola mundo</div>
-  }
+  
+  // ,
+  // {
+  //   path: '/blog/:slug'
+  // }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
