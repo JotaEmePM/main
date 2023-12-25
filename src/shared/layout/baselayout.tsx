@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { RandomIcon } from "../../components/icons/random.icon";
-import { HOMEPAGE_URL } from "../../Config";
+import { CV_URL, GITHUB_URL, HOMEPAGE_URL } from "../../Config";
 import { ThemeToggle } from "../../components/buttons/themetogglebutton";
 import { FooterSection } from "../../components/footer/footer-section";
 import { IconBrandGithub } from "@tabler/icons-react";
@@ -11,7 +11,7 @@ export default function Root() {
             <header className="fixed w-full p-2 z-20 backdrop-blur-md">
                 <div className="mx-auto max-w-3xl">
                     <nav className="flex items-center gap-3 text-base justify-between">
-                        <a href="/" className="group">
+                        <a href={HOMEPAGE_URL} className="group">
                             <h2 className="font-semibold tracking-tighter p-2 font-mplus text-lg inline-flex gap-2">
                                 <RandomIcon />
                                 JotaEmePM - Developer place
@@ -20,8 +20,8 @@ export default function Root() {
                         </a>
                         <div className="flex gap-x-6">
                             <div className="items-center gap-6 hidden md:flex">
-                                <a href={HOMEPAGE_URL}>Acerca de mí</a>
-                                <a href="/GitHub" className="inline-flex items-center gap-[4px]">
+                                <a href={CV_URL}>Acerca de mí</a>
+                                <a href={GITHUB_URL} className="inline-flex items-center gap-[4px]">
                                     <IconBrandGithub />
                                     GitHub
                                 </a>
@@ -35,7 +35,7 @@ export default function Root() {
                 </div>
             </header>
             <main className="px-8 mx-auto max-w-6xl pt-[86px]">
-                
+
                 {/* <section>
                     <p className="mb-8 indent-4">
                         Ex cupidatat labore laboris enim enim veniam labore est consectetur do minim minim velit id. Laborum exercitation excepteur mollit exercitation ipsum enim ea aliqua duis ut occaecat ullamco magna. Consectetur aute aute reprehenderit magna ea pariatur eiusmod Lorem proident qui.

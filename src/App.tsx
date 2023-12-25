@@ -2,7 +2,7 @@ function App() {
 
   return (
     <>
-      <h1>test</h1>
+
       {/* <main className="pt-[56px]">
         
         <section className="relative mb-6 h-80 flex justify-center items-center">
