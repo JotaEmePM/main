@@ -5,7 +5,9 @@ export const getAllPost = async () => {
     try {
         const baseUrl = import.meta.env.VITE_BASE_URL_BLOG_API
         const response: AxiosResponse = await axios.get(`${baseUrl}/post`)
+        console.log(response.data)
         return response.data as PaginationPostInterface
+
     } catch (error) {
         return {
             docs: [],

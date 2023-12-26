@@ -8,6 +8,7 @@ import Root from './shared/layout/baselayout';
 import { ErrorPage } from './shared/error-page';
 import { MainPage } from './pages/blog/main-page';
 import { CVPage } from './pages/cv/main';
+import { BlogPost } from './pages/blog/blog-post';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/cv',
         element: <CVPage />
+      },
+      {
+        path: '/blog/:slug',
+        element: <BlogPost />
       }
     ]
   },

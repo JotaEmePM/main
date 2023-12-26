@@ -1,9 +1,9 @@
 export interface PostInterface {
     title: string
     subtitle: string
-    publicationDate: string
+    creationDate: string
     slug: string
-    image: string
+    img: string
     trimcontent: string
 }
 
