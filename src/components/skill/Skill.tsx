@@ -18,11 +18,11 @@ export const Skill: React.FC<SkillInterface> = ({ icon, title, content }) => {
             <div className="space-y-3 flex-1">
                 <div className="flex items-center">
                     <h4
-                        className="font-normal text-sm mr-auto text-black flex items-center gap-1"
+                        className="font-normal text-sm mr-auto text-black dark:text-slate-300 flex items-center gap-1"
                     >
                         {title}
                         {content !== "" ?
-                        (<InfoModal title='Javascript y Typescript' icon={icon} content={content} />) : ""}
+                            (<InfoModal title={title} icon={icon} content={content} />) : ""}
                     </h4>
                 </div>
             </div>

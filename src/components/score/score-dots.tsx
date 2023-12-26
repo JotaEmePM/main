@@ -1,21 +1,39 @@
 //import { IconSquareDot, IconSquareDotFilled } from "@tabler/icons-react";
 import { IconSquareDot, IconSquareDotFilled } from "@tabler/icons-react";
+import { useState } from "react";
 
 interface ScoreDotsProps {
     filledItems: number
     unfilledItems: number
 }
 
-export const ScoreDots: React.FC<ScoreDotsProps> = ({filledItems, unfilledItems}) => {
+export const ScoreDots: React.FC<ScoreDotsProps> = ({ filledItems, unfilledItems }) => {
+
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [theme, _useTheme] = useState(() => {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark'
+        } else {
+            return 'light'
+        }
+    })
 
     const filledArr: JSX.Element[] = [];
     for (let i = 0; i < filledItems; i++) {
-        filledArr.push(<IconSquareDotFilled key={i} />);
+        filledArr.push(
+            <span key={i} className={`${theme === 'dark' ? 'text-slate-900' : 'text-slate-400'}`}>
+                <IconSquareDotFilled color="currentcolor" />
+            </span>
+        );
     }
 
     const unfilledArr: JSX.Element[] = [];
     for (let i = 0; i < unfilledItems; i++) {
-        unfilledArr.push(<IconSquareDot key={i} />);
+        unfilledArr.push(
+            <span key={i} className={`${theme === 'dark' ? 'text-slate-900' : 'text-slate-400'}`}>
+                <IconSquareDot key={i} color='currentColor' />
+            </span>
+        );
     }
 
     return (
@@ -24,7 +42,7 @@ export const ScoreDots: React.FC<ScoreDotsProps> = ({filledItems, unfilledItems}
             {unfilledArr}
         </span>
     )
-    
+
 }
 
 

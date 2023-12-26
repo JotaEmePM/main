@@ -13,8 +13,7 @@ import { BlogPost } from './pages/blog/blog-post';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
+    element: <Root />,    
     children: [
       {
         path: '/',
@@ -30,6 +29,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: '*',
+    errorElement: <ErrorPage />
+  }
 
   // ,
   // {
