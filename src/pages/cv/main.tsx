@@ -1,10 +1,10 @@
-import { IconArticle, IconAward, IconBrandAngular, IconBrandAws, IconBrandAzure, IconBrandBootstrap, IconBrandCSharp, IconBrandDocker, IconBrandGit, IconBrandGithub, IconBrandLinkedin, IconBrandMongodb, IconBrandPython, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconBrandWhatsapp, IconBriefcase, IconCat, IconCertificate, IconChartBar, IconChartLine, IconHelpHexagon, IconId, IconInfoSquareRounded, IconLanguage, IconMail, IconSchool, IconSql } from "@tabler/icons-react"
+import { IconArticle, IconAward, IconBrandAngular, IconBrandAws, IconBrandAzure, IconBrandBootstrap, IconBrandCSharp, IconBrandDocker, IconBrandGit, IconBrandGithub, IconBrandLinkedin, IconBrandMongodb, IconBrandPython, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconBrandWhatsapp, IconBriefcase, IconCat, IconChartBar, IconChartLine, IconHelpHexagon, IconId, IconInfoSquareRounded, IconLanguage, IconMail, IconSchool, IconSql } from "@tabler/icons-react"
 import { ScoreDots } from "../../components/score/score-dots"
 import { Skill } from "../../components/skill/Skill"
 import { NetFrameworkSkillDetail } from "../../components/skill/skills-descriptions/NetFrameworkSkillDetail"
 import { WorkExperienceSection } from "../../components/work-exp/WorkExperienceSection"
 import { EducationSection } from "../../components/education/EducationSection"
-import { PortfolioSection } from "../../components/portfolio/PortFolioSection"
+//import { PortfolioSection } from "../../components/portfolio/PortFolioSection"
 
 
 export const CVPage = () => {
