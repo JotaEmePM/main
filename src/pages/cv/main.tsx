@@ -17,12 +17,12 @@ export const CVPage = () => {
               className='w-[300px] flex flex-col rounded-md text-center overflow-hidden border shadow dark:bg-slate-700 dark:border-slate-700'
             >
               <div className='w-full h-[250px] border-inherit overflow-hidden'>
-                {/* <img className='w-full h-full object-cover' src='./images/jotaemepm.jpg' alt="José Miguel Perez"></img> */}
-                <img
-                  className='w-full h-full object-cover dark:bg-slate-700'
-                  src='https://placehold.co/250x250'
-                  alt='José Miguel Pérez'
-                />
+                 <img className='w-full h-full object-cover' src='./images/jotaemepm.jpg' alt="José Miguel Perez"></img> 
+                {/*<img*/}
+                {/*  className='w-full h-full object-cover dark:bg-slate-700'*/}
+                {/*  src='https://placehold.co/250x250'*/}
+                {/*  alt='José Miguel Pérez'*/}
+                {/*/>*/}
               </div>
               <div className='px-[24px] py-[16px] bg-slate-100 dark:bg-slate-700 '>
                 <h2 className='text-[26px] mb-[4px] profile-name text-black dark:text-slate-100'>
@@ -374,26 +374,27 @@ export const CVPage = () => {
                 </div>
                 {/*  */}
               </div>
-            </section>
-            <section className='flex flex-col bg-slate-100 dark:bg-slate-700  rounded border dark:border-slate-500 shadow p-2 w-full mt-2'>
-              <div className='basis-1 md:ml-3'>
-                <header className='flex gap-2'>
-                  <IconCertificate />
-                  <h4 className='text-xl text-gray-900 dark:text-slate-300 font-bold'>
-                    Portfolio
-                  </h4>
-                </header>
-                <p className='mt-2 text-base text-gray-600 dark:text-slate-300'>
-                  Aquí puedes encontrar algunos de mis proyectos publicos. Puedes seleccionar uno para ver más información.
-                </p>
-                <PortfolioSection />
-                {/* <PortfolioItem image="" title="Blog" description="Blog desarrollado para mi portafolio" subdescription="[React, MongoDB, Expres(API)]" url="https://blog.jotaemepm.dev" />
-                <PortfolioItem image="" title="Vinyl Store" description="Tienda de vinilos" subdescription="[React, MongoDB, Expres(API)]" url="https://blog.jotaemepm.dev" />
-                <PortfolioItem image="" title="CV" description="Portafolio web" subdescription="[React,Tailwindcss, Vercel]" url="https://jotaemepm.dev" /> */}
+              </section>
+
+            {/*<section className='flex flex-col bg-slate-100 dark:bg-slate-700  rounded border dark:border-slate-500 shadow p-2 w-full mt-2'>*/}
+            {/*  <div className='basis-1 md:ml-3'>*/}
+            {/*    <header className='flex gap-2'>*/}
+            {/*      <IconCertificate />*/}
+            {/*      <h4 className='text-xl text-gray-900 dark:text-slate-300 font-bold'>*/}
+            {/*        Portfolio*/}
+            {/*      </h4>*/}
+            {/*    </header>*/}
+            {/*    <p className='mt-2 text-base text-gray-600 dark:text-slate-300'>*/}
+            {/*      Aquí puedes encontrar algunos de mis proyectos publicos. Puedes seleccionar uno para ver más información.*/}
+            {/*    </p>*/}
+            {/*    <PortfolioSection />*/}
+            {/*    */}{/* <PortfolioItem image="" title="Blog" description="Blog desarrollado para mi portafolio" subdescription="[React, MongoDB, Expres(API)]" url="https://blog.jotaemepm.dev" />*/}{/*
+            */}{/*    <PortfolioItem image="" title="Vinyl Store" description="Tienda de vinilos" subdescription="[React, MongoDB, Expres(API)]" url="https://blog.jotaemepm.dev" />*/}{/*
+            */}{/*    <PortfolioItem image="" title="CV" description="Portafolio web" subdescription="[React,Tailwindcss, Vercel]" url="https://jotaemepm.dev" /> */}
 
 
-              </div>
-            </section>
+            {/*  </div>*/}
+            {/*</section>*/}
           </section>
         </div >
   </>)
