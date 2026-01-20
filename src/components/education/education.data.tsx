@@ -75,5 +75,13 @@ export const EducationData: EducationItemData[] = [
         description: 'Virtual LabX - Universidad de Chile (en curso)',
         isLocalFile: false
     },
+    {
+        order: 9,
+        name: 'Curso de Innovación tecnologica aplicada a los seguros',
+        icon: <IconCertificate />,
+        cert: '',
+        description: 'Escuela de Seguros - 2025',
+        isLocalFile: false
+    }
 
 ]

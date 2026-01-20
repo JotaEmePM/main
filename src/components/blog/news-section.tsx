@@ -14,10 +14,12 @@ export const NewsSection = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const data = await getAllPost() as PaginationPostInterface
-
-            setPosts(data)
-            setIsLoading(false)
+            try {
+                const data = await getAllPost() as PaginationPostInterface
+                setPosts(data)
+            } finally {
+                setIsLoading(false)
+            }
         }
 
         fetchData()
@@ -37,7 +39,7 @@ export const NewsSection = () => {
                     (
                         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                             {
-                                posts?.docs.map((post) => {
+                                (posts?.docs ?? []).map((post) => {
                                     return (
                                         <li key={post.slug} className="text-center mb-4 dark:bg-slate-200 p-2 dark:bg-opacity-5 bg-gray-400 bg-opacity-10 pb-4 rounded-lg">
                                             <Link to={`/blog/${post.slug}`}>
