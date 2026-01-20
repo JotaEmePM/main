@@ -1,6 +1,6 @@
 //import { IconSquareDot, IconSquareDotFilled } from "@tabler/icons-react";
 import { IconSquareDot, IconSquareDotFilled } from "@tabler/icons-react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 interface ScoreDotsProps {
     filledItems: number
@@ -18,7 +18,7 @@ export const ScoreDots: React.FC<ScoreDotsProps> = ({ filledItems, unfilledItems
         }
     })
 
-    const filledArr: JSX.Element[] = [];
+    const filledArr: React.ReactElement[] = [];
     for (let i = 0; i < filledItems; i++) {
         filledArr.push(
             <span key={i} className={`${theme === 'dark' ? 'text-slate-900' : 'text-slate-400'}`}>
@@ -27,7 +27,7 @@ export const ScoreDots: React.FC<ScoreDotsProps> = ({ filledItems, unfilledItems
         );
     }
 
-    const unfilledArr: JSX.Element[] = [];
+    const unfilledArr: React.ReactElement[] = [];
     for (let i = 0; i < unfilledItems; i++) {
         unfilledArr.push(
             <span key={i} className={`${theme === 'dark' ? 'text-slate-900' : 'text-slate-400'}`}>
